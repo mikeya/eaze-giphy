@@ -18,7 +18,34 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
+
+#masonry {
+  margin:20px auto;
+}
+
+.mobile {
+  display:none !important;
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  .mobile {
+    display:flex !important;
+  }
+  .desktop {
+    display:none !important;
+  }
+  img {
+    width:150px !important;
+  }
+  #toolbar{
+    height:auto !important;
+    flex-wrap:wrap;
+  }
+
+}
+
+
