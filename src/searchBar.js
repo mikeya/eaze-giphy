@@ -29,7 +29,11 @@ class SearchBar extends Component {
     render(){
         return (
            <form onSubmit={this.onSubmit}>
-               <TextField hintText="Search Giphs" value={this.state.value} onChange={this.onChange}/>
+               <TextField
+                   hintText="Search Giphs"
+                   value={this.state.value} onChange={this.onChange}
+                   className="search-text-field"
+               />
                <IconButton onClick={this.onSubmit.bind(this)} >
                    <Search color={cyan500}/>
                </IconButton>

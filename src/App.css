@@ -46,6 +46,10 @@
     flex-wrap:wrap;
   }
 
+  .search-text-field{
+    width:75% !important;
+  }
+
 }
 
 
