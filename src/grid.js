@@ -161,7 +161,7 @@ class Grid extends Component {
         })
     }
 
-    handleClose = () => {
+    handleClose(){
         this.setState({
             open: false,
             selectedGif: {}
@@ -175,7 +175,7 @@ class Grid extends Component {
                     title="Gif Details"
                     modal={false}
                     open={this.state.open}
-                    onRequestClose={this.handleClose}
+                    onRequestClose={this.handleClose.bind(this)}
                     repositionOnUpdate={true}>
                     <img src={this.state.selectedGif.images ? this.state.selectedGif.images.fixed_height.url : ''}
                          style={{width:'100%'}}
